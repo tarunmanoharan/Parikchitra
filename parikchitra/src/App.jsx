@@ -8,8 +8,6 @@ function App() {
         <ul className='choice'>
           <li>Student</li>
           <li>Teacher</li>
-          <li>Sign-in</li>
-          <li>Sign-up</li>
         </ul>
       </div>
     </>
