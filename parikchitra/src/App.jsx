@@ -9,6 +9,7 @@ function App() {
           <li>Student</li>
           <li>Teacher</li>
           <li>Sign-in</li>
+          <li>Sign-up</li>
         </ul>
       </div>
     </>
