@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css"
+import "./Footer.css"
 import{
     AiOutlineTwitter,
     AiFillInstagram,
@@ -7,7 +7,7 @@ import{
 
 import {FaLinkedinIn} from "react-icons/fa";
 
-export const Footer =()=>{
+function Footer(){
 
     let date = new Date();
     let year = date.getFullYear();
@@ -70,3 +70,5 @@ export const Footer =()=>{
     )
 
 }
+
+export default Footer;

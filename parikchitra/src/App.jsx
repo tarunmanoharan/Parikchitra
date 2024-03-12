@@ -1,11 +1,13 @@
 import './App.css'
-import './components/footer'
-import { Footer } from './components/footer'
+import  Footer  from './components/Footer'
+
+import Bg from './components/Bg'
 
 function App() {
 
   return (
     <>
+     <Bg/>
       <div className='choice-container'>
          
         <div className='title'>
