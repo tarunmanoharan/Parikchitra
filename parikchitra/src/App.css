@@ -3,7 +3,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 100vh;
+   height: 85vh;
    width: 100% ;
    
 }
@@ -31,3 +31,5 @@
 .choice li:hover{
   color: rgb(226, 38, 38);
 }
+
+

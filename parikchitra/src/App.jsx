@@ -1,4 +1,6 @@
 import './App.css'
+import './footer'
+import { Footer } from './footer'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
           <li>Teacher</li>
         </ul>
       </div>
+
+      <Footer/>
     </>
   )
 }
