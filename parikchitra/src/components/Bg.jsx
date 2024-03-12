@@ -1,6 +1,7 @@
 import './Bg.css'
 
  function Bg(){
+    <>
     <div className='Bg-container'>
         <div className='absolute inset-0 justify-center'>
             <div className='bg-shape1 bg-teal opacity-50 bg-blur'></div>
@@ -9,6 +10,7 @@ import './Bg.css'
         </div>
 
     </div>
+    </>
 }
 
 export default Bg;

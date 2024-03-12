@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <Bg/>
+      <Bg/>
       <div className='choice-container'>
          
         <div className='title'>
