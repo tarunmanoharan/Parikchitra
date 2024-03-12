@@ -33,3 +33,24 @@
 }
 
 
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:700|IBM%20Plex%20Sans:400');
+
+h1 {
+  color: black;
+  font-size: 80px;
+  font-family: "IBM Plex Sans";
+}
+
+.title {
+  background: white;
+  height: 34vh;
+  /* position: relative; */
+  justify-items: center;
+  align-items: center;
+
+  filter: blur(3px) contrast(90);
+}
