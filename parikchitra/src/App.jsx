@@ -1,6 +1,6 @@
 import './App.css'
-import './footer'
-import { Footer } from './footer'
+import './components/footer'
+import { Footer } from './components/footer'
 
 function App() {
 
