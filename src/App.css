@@ -35,8 +35,8 @@
   border: 3px solid black;
   padding: 10px 25px 10px 25px;
   margin: 10px;
+  font-size: 1.8em;
   text-align: center;
-  font-size: 1.2em;
   transition: all .4s ease-in-out;
   border-radius: 25px;
 
@@ -56,8 +56,8 @@
    position:absolute;
    top:0;
    left:0;
-   width:90%;
-   height: 85vh;
+   width:94%;
+   height: 80vh;
    overflow: hidden;
 
 }
@@ -130,16 +130,15 @@
 
 h1 {
   color: black;
-  font-size: 80px;
-  font-family: "IBM Plex Sans";
+  font-size: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .title {
   
-  height: 34vh;
+  height: 30vh;
   justify-items: center;
   align-items: center;
-
   filter: blur(2px) contrast(90px);
 }
 
