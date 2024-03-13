@@ -1,19 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:700|IBM%20Plex%20Sans:400');
 
-.choice-container{
+
+
+
+.main-container{
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    height: 85vh;
-   width: 100% ;
+   width: 100vw;
+   position: relative;
+   background: linear-gradient(to right, #159957,#155799);
    
+}
+
+.choice-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .choice{
   list-style: none;
-  flex-direction: column;
-  
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .choice li{
@@ -22,9 +36,14 @@
   padding: 10px 25px 10px 25px;
   margin: 10px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   transition: all .4s ease-in-out;
   border-radius: 25px;
+
+  @media(max-width:768px)
+  {
+    font-size: 1em;
+  }
 
 }
 
@@ -33,11 +52,81 @@
 }
 
 
+.box{
+   position:absolute;
+   top:0;
+   left:0;
+   width:90%;
+   height: 85vh;
+   overflow: hidden;
+
+}
+
+.box li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+  border-radius: 50%;
+
+}
+
+.box li:nth-child(1){
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box li:nth-child(2){
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box li:nth-child(3){
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 0s;
+}
+.box li:nth-child(4){
+
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box li:nth-child(5){
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box li:nth-child(6){
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0) scale(0);
+  }
+
+  100%{
+    transform: translateY(-800px) scale(2);
+    opacity: 0;
+  }
+}
 
 
-
-
-@import url('https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:700|IBM%20Plex%20Sans:400');
 
 h1 {
   color: black;
@@ -46,11 +135,11 @@ h1 {
 }
 
 .title {
-  background: white;
+  
   height: 34vh;
-  /* position: relative; */
   justify-items: center;
   align-items: center;
 
-  filter: blur(3px) contrast(90);
+  filter: blur(2px) contrast(90px);
 }
+
