@@ -1,11 +1,21 @@
 import './App.css'
 import  Footer  from './components/Footer'
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  Link
+} from "react-router-dom"
+
+
+import Slogin from './assets/student/components/Slogin'
 
 function App() {
 
   return (
-    <>
+    <Router>
 
       <div className='main-container'>
 
@@ -24,19 +34,24 @@ function App() {
 
         <div className='choice-container'>
 
-        <ul className='choice'>
-          <li>Student</li>
-          <li>Teacher</li>
-        </ul>
+        <div className='choice'>
+          <Link to="/slogin">
+            <button>Student</button>
+            </Link>
+          <button>Teacher</button>
+        </div>
 
         </div>
 
       </div>
 
-
-
       <Footer/>
-    </>
+
+    <Routes>
+      <Route path="/slogin" element={<Slogin/>}/>
+    </Routes>
+
+    </Router>
   )
 }
 

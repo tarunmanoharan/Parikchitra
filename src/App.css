@@ -30,15 +30,17 @@
   flex-direction: row;
 }
 
-.choice li{
+.choice button{
   cursor: pointer;
+  color: #159957;
+  font-size: 1.5em;
+  font-weight: 700;
   border: 3px solid black;
   padding: 10px 25px 10px 25px;
   margin: 10px;
-  font-size: 1.8em;
   text-align: center;
   transition: all .4s ease-in-out;
-  border-radius: 25px;
+  border-radius: 40px;
 
   @media(max-width:768px)
   {
@@ -130,7 +132,7 @@
 
 h1 {
   color: black;
-  font-size: 100px;
+  font-size: 6em;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
