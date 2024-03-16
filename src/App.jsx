@@ -15,9 +15,9 @@ function App() {
 
   return (
     <>
-     <Choice/>
-     <Footer/>
     
+     <Choice/>
+     <Footer/>    
     </>
   )
 }
