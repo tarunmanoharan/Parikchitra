@@ -15,10 +15,17 @@ function App() {
 
   return (
     <>
+    <Router>
+
     
-     <Choice/>
-     <Footer/>    
-    </>
+    
+
+    <Routes>
+      <Route path='/' element={<Choice/>}/>
+      <Route path='/slogin' element={<Slogin/>}/>
+    </Routes>
+    </Router>
+  </>    
   )
 }
 

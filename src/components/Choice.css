@@ -19,6 +19,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   z-index: 999;
  }
  
  
@@ -74,6 +75,7 @@
    animation: animate 20s linear infinite;
    bottom: -150px;
    border-radius: 50%;
+
  
  }
  

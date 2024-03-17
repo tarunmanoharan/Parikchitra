@@ -1,8 +1,13 @@
 
 import React from 'react'
 import './Choice.css'
+import { useNavigate } from 'react-router-dom'
+import Footer from './Footer'
 
 function Choice() {
+
+
+const nav = useNavigate()
   return (
     <>
     <div className='main-container'>
@@ -23,14 +28,16 @@ function Choice() {
 <div className='choice-container'>
 
 <div className='choice'>
-  <button>Student</button>
-
+  <button onClick={()=>nav("/slogin")}>Student</button>
   <button>Teacher</button>
 </div>
 
 </div>
 
 </div>
+
+<Footer/>
+
     </>
   )
 }
