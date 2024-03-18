@@ -1,10 +1,4 @@
 // import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-// import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from 'react-icons/ai';
-// import { CgFileDocument } from 'react-icons/cg';
-
-// import '../css/Snav.css'; // Make sure to import your CSS file
-
 // function Snav() {
 //     const [navColour, updateNavbar] = useState(false);
 
@@ -25,50 +19,46 @@
 //     }, []);
 
 //     return (
-//         <nav className={navColour ? 'sticky Snav-navbar' : 'Snav-navbar'}>
-//             <div className="Snav-container">
-//                 <Link to="/" className="logo">
-//                     <p style={{ fontFamily: 'cursive' }}>Tarun</p>
-//                 </Link>
-//                 <div className="menu">
-//                     <ul>
-//                         <li>
-//                             <Link to="/" onClick={() => updateNavbar(false)}>
-//                                 <AiOutlineHome style={{ marginBottom: '2px' }} /> Home
-//                             </Link>
-//                         </li>
-//                         <li>
-//                             <Link to="/about" onClick={() => updateNavbar(false)}>
-//                                 <AiOutlineUser style={{ marginBottom: '2px' }} /> About
-//                             </Link>
-//                         </li>
-//                         <li>
-//                             <Link to="/project" onClick={() => updateNavbar(false)}>
-//                                 <AiOutlineFundProjectionScreen style={{ marginBottom: '2px' }} /> Projects
-//                             </Link>
-//                         </li>
-//                         <li>
-//                             <Link to="/resume" onClick={() => updateNavbar(false)}>
-//                                 <CgFileDocument style={{ marginBottom: '2px' }} /> Resume
-//                             </Link>
-//                         </li>
-//                     </ul>
-//                 </div>
-//             </div>
-//         </nav>
+//         
 //     );
 // }
 
 // export default Snav;
 
-import React from 'react'
+import React from 'react';
+import '../css/Snav.css';
+import { Link } from 'react-router-dom';
+import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from 'react-icons/ai';
+
 
 function Snav() {
-  return (
-    <nav clas>
-        <div>hello</div>
-    </nav>
-  )
+    return (
+        <nav className="Snav-navbar">
+            <div className="Snav-container">
+                <Link to="/" className="Snav-logo">
+                    <p>Parikchitra</p>
+                </Link>
+                <div className="Snav-menu">
+                    <ul>
+                        <li>
+                            <Link to="/" className="Snav-link">
+                                <AiOutlineHome style={{ marginBottom: '2px' }} /> Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/about" className="Snav-link">
+                                <AiOutlineUser style={{ marginBottom: '2px' }} /> My profile
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/projects" className="Snav-link">
+                                <AiOutlineFundProjectionScreen style={{ marginBottom: '2px' }} /> Logout                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
 }
 
-export default Snav
+export default Snav;
