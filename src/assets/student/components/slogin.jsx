@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../css/Slogin.css';
 
 const SLogin = () => {
@@ -6,14 +7,16 @@ const SLogin = () => {
 
     const handleSubmit = () => {
         if (action === "Login") {
-            // Handle login submission logic
         } else if (action === "Sign Up") {
-            // Handle sign up submission logic
         }
+
+        // history.push('/shome');
     };
+   
+    const nav = useNavigate();
 
     return (
-        <div className='container'>
+        <div className='Slogin-container'>
             <div className="submit-container">
                 <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Register</div>
                 <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login") }}>Login</div>
@@ -46,7 +49,7 @@ const SLogin = () => {
                 )}
             </div>
             <div className="login-button-container">
-                <button className="login-button" type="submit" onClick={handleSubmit}>Submit</button>
+                <button className="login-button" type="submit" onClick={()=>nav('/shome')}>Submit</button>
             </div>
         </div>
     );

@@ -6,10 +6,10 @@ import {
   Link
 } from "react-router-dom"
 
-import  Footer  from './components/Footer'
 
 import Slogin from './assets/student/components/Slogin'
 import Choice from './components/Choice'
+import Shome from './assets/student/Shome'
 
 function App() {
 
@@ -17,12 +17,10 @@ function App() {
     <>
     <Router>
 
-    
-    
-
     <Routes>
       <Route path='/' element={<Choice/>}/>
       <Route path='/slogin' element={<Slogin/>}/>
+      <Route path='/shome' element={<Shome/>}/>
     </Routes>
     </Router>
   </>    
