@@ -105,6 +105,30 @@
     color: #676767;
 }
 
-.lostpassword {
-    margin-left: 80px;
+
+
+
+
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-button {
+    width: 150px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #219653;
 }
