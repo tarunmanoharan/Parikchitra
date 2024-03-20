@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../css/Slogin.css';
+import '../s_css/Slogin.css';
 
 const Slogin = () => {
     const [action, setAction] = useState("Login");
@@ -10,7 +10,6 @@ const Slogin = () => {
         } else if (action === "Sign Up") {
         }
 
-        // history.push('/shome');
     };
    
     const nav = useNavigate();
