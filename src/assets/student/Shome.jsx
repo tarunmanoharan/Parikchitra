@@ -1,5 +1,5 @@
 import React from 'react'
-import Snav from './components/Snav'
+import Snav from './s_components/Snav'
 function Shome() {
   return (
     <>

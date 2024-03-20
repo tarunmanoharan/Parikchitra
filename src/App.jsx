@@ -7,7 +7,7 @@ import {
 } from "react-router-dom"
 
 
-import Slogin from './assets/student/components/Slogin'
+import Slogin from './assets/student/s_components/Slogin'
 import Choice from './components/Choice'
 import Shome from './assets/student/Shome'
 
