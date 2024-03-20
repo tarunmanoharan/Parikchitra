@@ -1,64 +1,61 @@
-// import React, { useState, useEffect } from 'react';
-// function Snav() {
-//     const [navColour, updateNavbar] = useState(false);
+import React, { useState } from 'react';
+import { FaBars, FaUserCircle } from 'react-icons/fa';
 
-//     useEffect(() => {
-//         function scrollHandler() {
-//             if (window.scrollY >= 20) {
-//                 updateNavbar(true);
-//             } else {
-//                 updateNavbar(false);
-//             }
-//         }
+const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
-//         window.addEventListener('scroll', scrollHandler);
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
-//         return () => {
-//             window.removeEventListener('scroll', scrollHandler);
-//         };
-//     }, []);
+  const toggleProfile = () => {
+    setIsProfileOpen(!isProfileOpen);
+  };
 
-//     return (
-//         
-//     );
-// }
+  return (
+    <nav className="flex items-center justify-between h-20 bg-gray-800 text-white px-4">
+      <div className="flex items-center">
+        {/* Sidebar Toggle Button */}
+        <button className="mr-4 focus:outline-none" onClick={toggleSidebar}>
+          <FaBars className="w-6 h-6" />
+        </button>
 
-// export default Snav;
+        {/* Website Title */}
+        <div className="text-xl font-bold">Parikchitra</div>
+      </div>
 
-import React from 'react';
-import '../css/Snav.css';
-import { Link } from 'react-router-dom';
-import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from 'react-icons/ai';
+      {/* Sidebar */}
+      <div
+        className={`fixed left-0 top-20 h-[calc(100vh-5rem)] bg-gray-700 transition-all duration-300 ${
+          isSidebarOpen ? 'w-1/5' : 'w-0'
+        }`}
+      >
+        {/* Add your sidebar content here */}
+      </div>
 
+      {/* Profile and Logout */}
+      <div className="relative">
+        <button className="focus:outline-none" onClick={toggleProfile}>
+          <FaUserCircle className="w-6 h-6" />
+        </button>
 
-function Snav() {
-    return (
-        <nav className="Snav-navbar">
-            <div className="Snav-container">
-                <Link to="/" className="Snav-logo">
-                    <p>Parikchitra</p>
-                </Link>
-                <div className="Snav-menu">
-                    <ul>
-                        <li>
-                            <Link to="/" className="Snav-link">
-                                <AiOutlineHome style={{ marginBottom: '2px' }} /> Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className="Snav-link">
-                                <AiOutlineUser style={{ marginBottom: '2px' }} /> My profile
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/projects" className="Snav-link">
-                                <AiOutlineFundProjectionScreen style={{ marginBottom: '2px' }} /> Logout                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
-}
+        {/* Profile and Logout Options */}
+        <div
+          className={`absolute right-0 mt-2 bg-white text-gray-800 rounded shadow-md ${
+            isProfileOpen ? 'block' : 'hidden'
+          }`}
+        >
+          <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+            My Profile
+          </a>
+          <a href="#" className="block px-4 py-2 hover:bg-gray-200">
+            Logout
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Snav;
+export default Navbar;
