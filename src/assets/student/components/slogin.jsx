@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/Slogin.css';
 
-const SLogin = () => {
+const Slogin = () => {
     const [action, setAction] = useState("Login");
 
     const handleSubmit = () => {
@@ -55,4 +55,4 @@ const SLogin = () => {
     );
 };
 
-export default SLogin;
+export default Slogin;
