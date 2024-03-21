@@ -1,11 +1,14 @@
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #22c55e;
     color: #000;
     padding: 1rem 1.5rem;
-    margin-top: auto;
+    
   }
   
   .footer-left p {
