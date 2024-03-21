@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../s_css/Slogin.css';
+import '../s-css/Slogin.css';
 
 const Slogin = () => {
     const [action, setAction] = useState("Login");
