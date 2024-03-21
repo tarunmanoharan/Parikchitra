@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    background-color: #22c55e;
-    color: #000;
+    background-color: #36d26f;
+    color: #2b2929;
     padding: 0 1.5rem;
   }
   
@@ -35,8 +35,8 @@
     top: 5rem;
     left: 0;
     height: calc(100vh - 5rem);
-    background-color: #22c55e;
-    color: #000;
+    background-color: #36d26f;
+    color: #2b2929;
     width: 0;
     overflow: hidden;
     transition: width 0.3s ease;
