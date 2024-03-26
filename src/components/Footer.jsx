@@ -13,6 +13,7 @@ function Footer(){
     let year = date.getFullYear();
 
     return(
+        
         <div className="footer-container">
             
             <span className="footer-copyright">
@@ -29,7 +30,7 @@ function Footer(){
                    <li className="social-icons">
                      <a 
                       href="https://"
-                      style={{color: "white"}}
+                      style={{color: "#00A896"}}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Twitter"
@@ -41,7 +42,7 @@ function Footer(){
                    <li className="social-icons">
                     <a
                     href=""
-                    style={{color: "white"}}
+                    style={{color: "#00A896"}}
                     target="_blank"
                     rel=" noopener noreferrer"
                     aria-label="Instagram"
@@ -53,7 +54,7 @@ function Footer(){
                    <li className="social-icons">
                     <a
                     href=""
-                    style={{color: "white"}}
+                    style={{color: "#00A896"}}
                     target="_blank"
                     rel=" noopener noreferrer"
                     aria-label="Linkiden"
@@ -67,6 +68,7 @@ function Footer(){
             </span>
 
         </div>
+        
     )
 
 }

@@ -48,7 +48,7 @@ const Slogin = () => {
                 )}
             </div>
             <div className="login-button-container">
-                <button className="login-button" type="submit" onClick={()=>nav('/shome')}>Submit</button>
+                <button className="login-button"  onClick={()=>nav('/shome')}>Submit</button>
             </div>
         </div>
     );
